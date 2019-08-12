@@ -49,4 +49,8 @@ git reset --mixed chave-commit-anterior # Mata o commit e volta os arquivo para 
 
 git reset --hard chave-commit-anterior  # Mata todo o commit e arquivos enviados
 
+Trabalhando com ramificações (branch);
+git checkout -b feature/nomedafeature
+
+
 
