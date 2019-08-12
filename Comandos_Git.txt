@@ -1,0 +1,52 @@
+Instalar
+apt install git
+
+Primeiro configurar usuário;
+git config --global user.name "SeuUser" 
+git config --global user.email "seu.email@domain.com"
+
+Ver configurações;
+git config --list 
+
+Iniciar o Git;
+git init	# dentro do diretório que irá utilizar
+git status
+
+Utilizando/Versionando;
+git add ARQUIVO (ou * para tudo)
+git status
+git commit -m "Primeiro Commit"
+git status
+git remote add origin git@github.com:juniorze/B7Web.git
+git push -u origin master
+git commit -m "Arquivos do Curso"
+git push
+
+Logs;
+git log		#logs dos commits
+git log --decorate
+git log --author=”juniorze”
+git shortlog -sn
+
+Diferenças nos arquivos;
+git diff  # ver a diferença do arquivo
+git diff --name-only # somente o nome dos arquivos modificados
+
+Tipos de Commit;
+git commit -am # -a para um arquivo que já foi commitado | e -m para mensagem entre “”
+
+Voltar versão antes do commit;
+git checkout ARQUIVO # antes de add (ainda parece no git diff)
+
+git reset HEAD # após o add (não aparece mais no git diff) 
+e depois o (agora parece novamente no git diff) 
+git checkout ARQUIVO 
+
+Voltar versão depois do commit;
+git reset --soft chave-commit-anterior # Mata o commit e deixa o arquivo no add pronto para commit novamente
+
+git reset --mixed chave-commit-anterior # Mata o commit e volta os arquivo para antes do add
+
+git reset --hard chave-commit-anterior  # Mata todo o commit e arquivos enviados
+
+
