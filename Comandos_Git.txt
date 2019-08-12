@@ -52,5 +52,8 @@ git reset --hard chave-commit-anterior  # Mata todo o commit e arquivos enviados
 Trabalhando com ramificações (branch);
 git checkout -b feature/nomedafeature
 
+Mudar de branch
+git checkout master
+
 
 
